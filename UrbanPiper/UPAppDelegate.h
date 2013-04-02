@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class UPViewController;
+@class UPAdminLoginViewController;
 
 @interface UPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) UPViewController *viewController;
+@property (strong, nonatomic) UPAdminLoginViewController *viewController;
 
 @end

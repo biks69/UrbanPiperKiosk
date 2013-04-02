@@ -11,4 +11,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "UILabel-Private.h"
+    #import "_UIGraphicsLetterpressStyle.h"
+    #import "UPSession.h"
 #endif
