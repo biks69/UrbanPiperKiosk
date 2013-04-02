@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UPMenuSelectionView.h"
 
-@interface UPMenuViewController : UIViewController
+@interface UPMenuViewController : UIViewController <UIGestureRecognizerDelegate, UIAlertViewDelegate, UPMenuSelectionViewDelegate>
+
+// Properties
+@property (nonatomic, strong) NSString *bizName;
 
 @end

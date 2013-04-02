@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UPRatingControl.h"
 
-@interface UPFeedbackViewController : UITableViewController
+@interface UPFeedbackViewController : UITableViewController <UIPickerViewDataSource, UIPickerViewDelegate, UPRatingControlDelegate, UITextFieldDelegate>
 
 @end

@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>menu</key>
+	<dict>
+		<key>icons</key>
+		<array>
+			<dict>
+				<key>tag</key>
+				<integer>10</integer>
+				<key>icon</key>
+				<string>feedback</string>
+				<key>title</key>
+				<string>Feedback</string>
+				<key>hidden</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>tag</key>
+				<integer>11</integer>
+				<key>icon</key>
+				<string>signup</string>
+				<key>title</key>
+				<string>Register</string>
+				<key>hidden</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>tag</key>
+				<integer>12</integer>
+				<key>icon</key>
+				<string>rewards</string>
+				<key>title</key>
+				<string>Rewards</string>
+				<key>hidden</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>tag</key>
+				<integer>13</integer>
+				<key>icon</key>
+				<string>order</string>
+				<key>title</key>
+				<string>Bookings</string>
+				<key>hidden</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>tag</key>
+				<integer>14</integer>
+				<key>icon</key>
+				<string>aboutUs</string>
+				<key>title</key>
+				<string>About Us</string>
+				<key>hidden</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+</dict>
 </plist>

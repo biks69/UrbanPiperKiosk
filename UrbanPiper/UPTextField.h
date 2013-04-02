@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UPTextField : UITextField
+
 @property (nonatomic, strong) NSString *elementKey;
 
 @end

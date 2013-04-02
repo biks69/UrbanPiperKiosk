@@ -24,4 +24,11 @@ return _sharedObject; \
 	});
 }
 
+
+- (void)clearSession {
+    self.loggedInUserName = nil;
+    self.customer = nil;
+    self.sharedAuthKey = nil;
+}
+
 @end

@@ -7,21 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1E190316FEDCF900C8C1AE /* UPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E190216FEDCF900C8C1AE /* UPTextField.m */; };
+		2F1E190616FF7FE700C8C1AE /* UPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E190516FF7FE700C8C1AE /* UPRequestManager.m */; };
+		2F1E190916FF95A400C8C1AE /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E190816FF95A400C8C1AE /* NSData+Additions.m */; };
+		2F1E190C16FF9EB600C8C1AE /* UPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E190B16FF9EB600C8C1AE /* UPSession.m */; };
+		2F1E19151700036500C8C1AE /* UPCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E19141700036500C8C1AE /* UPCustomer.m */; };
+		2F1E19181700145400C8C1AE /* UPMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E19171700145300C8C1AE /* UPMenuViewController.m */; };
 		2F4A31E716EC0D4C0050B5AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4A31E616EC0D4C0050B5AC /* UIKit.framework */; };
 		2F4A31E916EC0D4C0050B5AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4A31E816EC0D4C0050B5AC /* Foundation.framework */; };
 		2F4A31EB16EC0D4C0050B5AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4A31EA16EC0D4C0050B5AC /* CoreGraphics.framework */; };
 		2F4A31F116EC0D4C0050B5AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A31EF16EC0D4C0050B5AC /* InfoPlist.strings */; };
 		2F4A31F316EC0D4C0050B5AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A31F216EC0D4C0050B5AC /* main.m */; };
 		2F4A31F716EC0D4C0050B5AC /* UPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A31F616EC0D4C0050B5AC /* UPAppDelegate.m */; };
-		2F4A31F916EC0D4C0050B5AC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A31F816EC0D4C0050B5AC /* Default.png */; };
-		2F4A31FB16EC0D4C0050B5AC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A31FA16EC0D4C0050B5AC /* Default@2x.png */; };
-		2F4A31FD16EC0D4C0050B5AC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A31FC16EC0D4C0050B5AC /* Default-568h@2x.png */; };
-		2F4A320016EC0D4C0050B5AC /* UPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A31FF16EC0D4C0050B5AC /* UPViewController.m */; };
-		2F4A320316EC0D4C0050B5AC /* UPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A320116EC0D4C0050B5AC /* UPViewController.xib */; };
+		2F4A320016EC0D4C0050B5AC /* UPAdminLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A31FF16EC0D4C0050B5AC /* UPAdminLoginViewController.m */; };
+		2F4A320316EC0D4C0050B5AC /* UPAdminLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A320116EC0D4C0050B5AC /* UPAdminLoginViewController.xib */; };
+		2F67836C17028C0700B2FE68 /* backGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F67836817028C0700B2FE68 /* backGround.png */; };
+		2F67836D17028C0700B2FE68 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F67836917028C0700B2FE68 /* Default-Landscape~ipad.png */; };
+		2F67836E17028C0700B2FE68 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F67836A17028C0700B2FE68 /* icon.png */; };
+		2F67836F17028C0700B2FE68 /* urbanpiper-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F67836B17028C0700B2FE68 /* urbanpiper-logo.png */; };
+		2F678372170298FF00B2FE68 /* UPMenuSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F678371170298FF00B2FE68 /* UPMenuSelectionView.m */; };
+		2F67837B1702A76000B2FE68 /* UPViewUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F67837A1702A75F00B2FE68 /* UPViewUtilities.m */; };
+		2F67837E1702B7CD00B2FE68 /* UPMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F67837D1702B7CC00B2FE68 /* UPMenuButton.m */; };
+		2F6783811702B81600B2FE68 /* UPGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6783801702B81600B2FE68 /* UPGradient.m */; };
+		2F67838917031DE400B2FE68 /* feedback.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F67838817031DE400B2FE68 /* feedback.png */; };
+		2F67838E1703C93900B2FE68 /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F67838D1703C93900B2FE68 /* configuration.plist */; };
+		2F6783901704F24300B2FE68 /* signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F67838F1704F24300B2FE68 /* signup.png */; };
+		2F6783941704FAD500B2FE68 /* aboutUs.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6783911704FAD400B2FE68 /* aboutUs.png */; };
+		2F6783951704FAD500B2FE68 /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6783921704FAD500B2FE68 /* order.png */; };
+		2F6783961704FAD500B2FE68 /* rewards.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6783931704FAD500B2FE68 /* rewards.png */; };
+		2F678399170510FF00B2FE68 /* UPFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F678398170510FD00B2FE68 /* UPFeedbackViewController.m */; };
+		2F67839C1705214300B2FE68 /* UPRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F67839B1705214200B2FE68 /* UPRatingControl.m */; };
+		2F6783A01705851D00B2FE68 /* star_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F67839E1705851B00B2FE68 /* star_empty.png */; };
+		2F6783A11705851D00B2FE68 /* star_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F67839F1705851C00B2FE68 /* star_full.png */; };
+		2F98777316EEA12100CFA216 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F98777216EEA12100CFA216 /* QuartzCore.framework */; };
+		2F98777916EED8BD00CFA216 /* UPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F98777816EED8BD00CFA216 /* UPTableViewCell.m */; };
+		2F98778216EFD5D900CFA216 /* UPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F98778116EFD5D900CFA216 /* UPButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F4A31E316EC0D4C0050B5AC /* UrbanPiper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrbanPiper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1E190116FEDCF900C8C1AE /* UPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPTextField.h; sourceTree = "<group>"; };
+		2F1E190216FEDCF900C8C1AE /* UPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPTextField.m; sourceTree = "<group>"; };
+		2F1E190416FF7FE700C8C1AE /* UPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPRequestManager.h; sourceTree = "<group>"; };
+		2F1E190516FF7FE700C8C1AE /* UPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPRequestManager.m; sourceTree = "<group>"; };
+		2F1E190716FF95A400C8C1AE /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Additions.h"; sourceTree = "<group>"; };
+		2F1E190816FF95A400C8C1AE /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
+		2F1E190A16FF9EB600C8C1AE /* UPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPSession.h; sourceTree = "<group>"; };
+		2F1E190B16FF9EB600C8C1AE /* UPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPSession.m; sourceTree = "<group>"; };
+		2F1E19131700036300C8C1AE /* UPCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCustomer.h; sourceTree = "<group>"; };
+		2F1E19141700036500C8C1AE /* UPCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPCustomer.m; sourceTree = "<group>"; };
+		2F1E19161700145300C8C1AE /* UPMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPMenuViewController.h; sourceTree = "<group>"; };
+		2F1E19171700145300C8C1AE /* UPMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPMenuViewController.m; sourceTree = "<group>"; };
+		2F4A31E316EC0D4C0050B5AC /* UPKiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UPKiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4A31E616EC0D4C0050B5AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F4A31E816EC0D4C0050B5AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F4A31EA16EC0D4C0050B5AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -31,12 +67,38 @@
 		2F4A31F416EC0D4C0050B5AC /* UrbanPiper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UrbanPiper-Prefix.pch"; sourceTree = "<group>"; };
 		2F4A31F516EC0D4C0050B5AC /* UPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPAppDelegate.h; sourceTree = "<group>"; };
 		2F4A31F616EC0D4C0050B5AC /* UPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UPAppDelegate.m; sourceTree = "<group>"; };
-		2F4A31F816EC0D4C0050B5AC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		2F4A31FA16EC0D4C0050B5AC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		2F4A31FC16EC0D4C0050B5AC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2F4A31FE16EC0D4C0050B5AC /* UPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPViewController.h; sourceTree = "<group>"; };
-		2F4A31FF16EC0D4C0050B5AC /* UPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UPViewController.m; sourceTree = "<group>"; };
-		2F4A320216EC0D4C0050B5AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UPViewController.xib; sourceTree = "<group>"; };
+		2F4A31FE16EC0D4C0050B5AC /* UPAdminLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPAdminLoginViewController.h; sourceTree = "<group>"; };
+		2F4A31FF16EC0D4C0050B5AC /* UPAdminLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UPAdminLoginViewController.m; sourceTree = "<group>"; };
+		2F4A320216EC0D4C0050B5AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UPAdminLoginViewController.xib; sourceTree = "<group>"; };
+		2F67836817028C0700B2FE68 /* backGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backGround.png; path = Resources/backGround.png; sourceTree = "<group>"; };
+		2F67836917028C0700B2FE68 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "Resources/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		2F67836A17028C0700B2FE68 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icon.png; sourceTree = "<group>"; };
+		2F67836B17028C0700B2FE68 /* urbanpiper-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "urbanpiper-logo.png"; path = "Resources/urbanpiper-logo.png"; sourceTree = "<group>"; };
+		2F678370170298FF00B2FE68 /* UPMenuSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPMenuSelectionView.h; sourceTree = "<group>"; };
+		2F678371170298FF00B2FE68 /* UPMenuSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPMenuSelectionView.m; sourceTree = "<group>"; };
+		2F6783791702A75F00B2FE68 /* UPViewUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPViewUtilities.h; sourceTree = "<group>"; };
+		2F67837A1702A75F00B2FE68 /* UPViewUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPViewUtilities.m; sourceTree = "<group>"; };
+		2F67837C1702B7CC00B2FE68 /* UPMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPMenuButton.h; sourceTree = "<group>"; };
+		2F67837D1702B7CC00B2FE68 /* UPMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPMenuButton.m; sourceTree = "<group>"; };
+		2F67837F1702B81600B2FE68 /* UPGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPGradient.h; sourceTree = "<group>"; };
+		2F6783801702B81600B2FE68 /* UPGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPGradient.m; sourceTree = "<group>"; };
+		2F67838817031DE400B2FE68 /* feedback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = feedback.png; path = Resources/feedback.png; sourceTree = "<group>"; };
+		2F67838D1703C93900B2FE68 /* configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = configuration.plist; sourceTree = "<group>"; };
+		2F67838F1704F24300B2FE68 /* signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = signup.png; path = Resources/signup.png; sourceTree = "<group>"; };
+		2F6783911704FAD400B2FE68 /* aboutUs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aboutUs.png; path = Resources/aboutUs.png; sourceTree = "<group>"; };
+		2F6783921704FAD500B2FE68 /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = order.png; path = Resources/order.png; sourceTree = "<group>"; };
+		2F6783931704FAD500B2FE68 /* rewards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rewards.png; path = Resources/rewards.png; sourceTree = "<group>"; };
+		2F678397170510FB00B2FE68 /* UPFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPFeedbackViewController.h; sourceTree = "<group>"; };
+		2F678398170510FD00B2FE68 /* UPFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPFeedbackViewController.m; sourceTree = "<group>"; };
+		2F67839A1705214100B2FE68 /* UPRatingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPRatingControl.h; sourceTree = "<group>"; };
+		2F67839B1705214200B2FE68 /* UPRatingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPRatingControl.m; sourceTree = "<group>"; };
+		2F67839E1705851B00B2FE68 /* star_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_empty.png; path = Resources/star_empty.png; sourceTree = "<group>"; };
+		2F67839F1705851C00B2FE68 /* star_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_full.png; path = Resources/star_full.png; sourceTree = "<group>"; };
+		2F98777216EEA12100CFA216 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2F98777716EED8BD00CFA216 /* UPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPTableViewCell.h; sourceTree = "<group>"; };
+		2F98777816EED8BD00CFA216 /* UPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPTableViewCell.m; sourceTree = "<group>"; };
+		2F98778016EFD5D900CFA216 /* UPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPButton.h; sourceTree = "<group>"; };
+		2F98778116EFD5D900CFA216 /* UPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F98777316EEA12100CFA216 /* QuartzCore.framework in Frameworks */,
 				2F4A31E716EC0D4C0050B5AC /* UIKit.framework in Frameworks */,
 				2F4A31E916EC0D4C0050B5AC /* Foundation.framework in Frameworks */,
 				2F4A31EB16EC0D4C0050B5AC /* CoreGraphics.framework in Frameworks */,
@@ -65,7 +128,7 @@
 		2F4A31E416EC0D4C0050B5AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F4A31E316EC0D4C0050B5AC /* UrbanPiper.app */,
+				2F4A31E316EC0D4C0050B5AC /* UPKiosk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +136,7 @@
 		2F4A31E516EC0D4C0050B5AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F98777216EEA12100CFA216 /* QuartzCore.framework */,
 				2F4A31E616EC0D4C0050B5AC /* UIKit.framework */,
 				2F4A31E816EC0D4C0050B5AC /* Foundation.framework */,
 				2F4A31EA16EC0D4C0050B5AC /* CoreGraphics.framework */,
@@ -85,9 +149,36 @@
 			children = (
 				2F4A31F516EC0D4C0050B5AC /* UPAppDelegate.h */,
 				2F4A31F616EC0D4C0050B5AC /* UPAppDelegate.m */,
-				2F4A31FE16EC0D4C0050B5AC /* UPViewController.h */,
-				2F4A31FF16EC0D4C0050B5AC /* UPViewController.m */,
-				2F4A320116EC0D4C0050B5AC /* UPViewController.xib */,
+				2F4A31FE16EC0D4C0050B5AC /* UPAdminLoginViewController.h */,
+				2F4A31FF16EC0D4C0050B5AC /* UPAdminLoginViewController.m */,
+				2F678397170510FB00B2FE68 /* UPFeedbackViewController.h */,
+				2F678398170510FD00B2FE68 /* UPFeedbackViewController.m */,
+				2F1E19161700145300C8C1AE /* UPMenuViewController.h */,
+				2F1E19171700145300C8C1AE /* UPMenuViewController.m */,
+				2F678370170298FF00B2FE68 /* UPMenuSelectionView.h */,
+				2F678371170298FF00B2FE68 /* UPMenuSelectionView.m */,
+				2F98777716EED8BD00CFA216 /* UPTableViewCell.h */,
+				2F98777816EED8BD00CFA216 /* UPTableViewCell.m */,
+				2F98778016EFD5D900CFA216 /* UPButton.h */,
+				2F98778116EFD5D900CFA216 /* UPButton.m */,
+				2F1E190116FEDCF900C8C1AE /* UPTextField.h */,
+				2F1E190216FEDCF900C8C1AE /* UPTextField.m */,
+				2F1E190416FF7FE700C8C1AE /* UPRequestManager.h */,
+				2F1E190516FF7FE700C8C1AE /* UPRequestManager.m */,
+				2F1E190716FF95A400C8C1AE /* NSData+Additions.h */,
+				2F1E190816FF95A400C8C1AE /* NSData+Additions.m */,
+				2F1E190A16FF9EB600C8C1AE /* UPSession.h */,
+				2F1E190B16FF9EB600C8C1AE /* UPSession.m */,
+				2F1E19131700036300C8C1AE /* UPCustomer.h */,
+				2F1E19141700036500C8C1AE /* UPCustomer.m */,
+				2F6783791702A75F00B2FE68 /* UPViewUtilities.h */,
+				2F67837A1702A75F00B2FE68 /* UPViewUtilities.m */,
+				2F67837C1702B7CC00B2FE68 /* UPMenuButton.h */,
+				2F67837D1702B7CC00B2FE68 /* UPMenuButton.m */,
+				2F67837F1702B81600B2FE68 /* UPGradient.h */,
+				2F6783801702B81600B2FE68 /* UPGradient.m */,
+				2F67839A1705214100B2FE68 /* UPRatingControl.h */,
+				2F67839B1705214200B2FE68 /* UPRatingControl.m */,
 				2F4A31ED16EC0D4C0050B5AC /* Supporting Files */,
 			);
 			path = UrbanPiper;
@@ -96,13 +187,23 @@
 		2F4A31ED16EC0D4C0050B5AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F67839E1705851B00B2FE68 /* star_empty.png */,
+				2F67839F1705851C00B2FE68 /* star_full.png */,
+				2F67838D1703C93900B2FE68 /* configuration.plist */,
+				2F6783911704FAD400B2FE68 /* aboutUs.png */,
+				2F6783921704FAD500B2FE68 /* order.png */,
+				2F6783931704FAD500B2FE68 /* rewards.png */,
+				2F67838F1704F24300B2FE68 /* signup.png */,
+				2F67838817031DE400B2FE68 /* feedback.png */,
+				2F67836817028C0700B2FE68 /* backGround.png */,
+				2F67836917028C0700B2FE68 /* Default-Landscape~ipad.png */,
+				2F67836A17028C0700B2FE68 /* icon.png */,
+				2F67836B17028C0700B2FE68 /* urbanpiper-logo.png */,
+				2F4A320116EC0D4C0050B5AC /* UPAdminLoginViewController.xib */,
 				2F4A31EE16EC0D4C0050B5AC /* UrbanPiper-Info.plist */,
 				2F4A31EF16EC0D4C0050B5AC /* InfoPlist.strings */,
 				2F4A31F216EC0D4C0050B5AC /* main.m */,
 				2F4A31F416EC0D4C0050B5AC /* UrbanPiper-Prefix.pch */,
-				2F4A31F816EC0D4C0050B5AC /* Default.png */,
-				2F4A31FA16EC0D4C0050B5AC /* Default@2x.png */,
-				2F4A31FC16EC0D4C0050B5AC /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,7 +225,7 @@
 			);
 			name = UrbanPiper;
 			productName = UrbanPiper;
-			productReference = 2F4A31E316EC0D4C0050B5AC /* UrbanPiper.app */;
+			productReference = 2F4A31E316EC0D4C0050B5AC /* UPKiosk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,10 +260,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4A31F116EC0D4C0050B5AC /* InfoPlist.strings in Resources */,
-				2F4A31F916EC0D4C0050B5AC /* Default.png in Resources */,
-				2F4A31FB16EC0D4C0050B5AC /* Default@2x.png in Resources */,
-				2F4A31FD16EC0D4C0050B5AC /* Default-568h@2x.png in Resources */,
-				2F4A320316EC0D4C0050B5AC /* UPViewController.xib in Resources */,
+				2F4A320316EC0D4C0050B5AC /* UPAdminLoginViewController.xib in Resources */,
+				2F67836C17028C0700B2FE68 /* backGround.png in Resources */,
+				2F67836D17028C0700B2FE68 /* Default-Landscape~ipad.png in Resources */,
+				2F67836E17028C0700B2FE68 /* icon.png in Resources */,
+				2F67836F17028C0700B2FE68 /* urbanpiper-logo.png in Resources */,
+				2F67838917031DE400B2FE68 /* feedback.png in Resources */,
+				2F67838E1703C93900B2FE68 /* configuration.plist in Resources */,
+				2F6783901704F24300B2FE68 /* signup.png in Resources */,
+				2F6783941704FAD500B2FE68 /* aboutUs.png in Resources */,
+				2F6783951704FAD500B2FE68 /* order.png in Resources */,
+				2F6783961704FAD500B2FE68 /* rewards.png in Resources */,
+				2F6783A01705851D00B2FE68 /* star_empty.png in Resources */,
+				2F6783A11705851D00B2FE68 /* star_full.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +285,21 @@
 			files = (
 				2F4A31F316EC0D4C0050B5AC /* main.m in Sources */,
 				2F4A31F716EC0D4C0050B5AC /* UPAppDelegate.m in Sources */,
-				2F4A320016EC0D4C0050B5AC /* UPViewController.m in Sources */,
+				2F4A320016EC0D4C0050B5AC /* UPAdminLoginViewController.m in Sources */,
+				2F98777916EED8BD00CFA216 /* UPTableViewCell.m in Sources */,
+				2F98778216EFD5D900CFA216 /* UPButton.m in Sources */,
+				2F1E190316FEDCF900C8C1AE /* UPTextField.m in Sources */,
+				2F1E190616FF7FE700C8C1AE /* UPRequestManager.m in Sources */,
+				2F1E190916FF95A400C8C1AE /* NSData+Additions.m in Sources */,
+				2F1E190C16FF9EB600C8C1AE /* UPSession.m in Sources */,
+				2F1E19151700036500C8C1AE /* UPCustomer.m in Sources */,
+				2F1E19181700145400C8C1AE /* UPMenuViewController.m in Sources */,
+				2F678372170298FF00B2FE68 /* UPMenuSelectionView.m in Sources */,
+				2F67837B1702A76000B2FE68 /* UPViewUtilities.m in Sources */,
+				2F67837E1702B7CD00B2FE68 /* UPMenuButton.m in Sources */,
+				2F6783811702B81600B2FE68 /* UPGradient.m in Sources */,
+				2F678399170510FF00B2FE68 /* UPFeedbackViewController.m in Sources */,
+				2F67839C1705214300B2FE68 /* UPRatingControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,12 +314,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2F4A320116EC0D4C0050B5AC /* UPViewController.xib */ = {
+		2F4A320116EC0D4C0050B5AC /* UPAdminLoginViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2F4A320216EC0D4C0050B5AC /* en */,
 			);
-			name = UPViewController.xib;
+			name = UPAdminLoginViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -265,7 +389,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UrbanPiper/UrbanPiper-Prefix.pch";
 				INFOPLIST_FILE = "UrbanPiper/UrbanPiper-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UPKiosk;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -276,7 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UrbanPiper/UrbanPiper-Prefix.pch";
 				INFOPLIST_FILE = "UrbanPiper/UrbanPiper-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UPKiosk;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -300,6 +424,7 @@
 				2F4A320816EC0D4C0050B5AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

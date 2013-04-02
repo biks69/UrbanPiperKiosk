@@ -16,7 +16,8 @@ typedef enum  {
 
 typedef enum  {
     UPResponseStatusCodeInvaidCredentials = 401,
-    UPResponseStatusCodeOK = 200
+    UPResponseStatusCodeOK = 200,
+    UPResponseStatusCodeFeedbackSuccess = 201
 } UPResponseStatusCode;
 
 typedef void (^UPRequestCompletionBlock)(NSDictionary *iResponse, NSError *iError);

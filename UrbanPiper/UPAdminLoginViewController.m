@@ -8,8 +8,11 @@
 
 #import "/usr/include/objc/objc-runtime.h"
 #import "UPAdminLoginViewController.h"
+#import "UPAppDelegate.h"
+#import "UPMenuViewController.h"
 #import "UPRequestManager.h"
 #import "UPTableViewCell.h"
+#import "UPCustomer.h"
 #import "UPTextField.h"
 #import "UPButton.h"
 
@@ -55,8 +58,7 @@ static NSUInteger kNumberOfFormElements = 2;
                                                object:nil];
     
 	// Do any additional setup after loading the view, typically from a nib.
-//    self.view.backgroundColor = [UIColor colorWithRed:(58.0/255.0) green:(112.0/255.0) blue:(146.0/255.0) alpha:1.0];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backGround"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backGround.png"]];
     
     self.viewContainer = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     [self.viewContainer setBackgroundColor:[UIColor clearColor]];
@@ -67,7 +69,6 @@ static NSUInteger kNumberOfFormElements = 2;
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -78,7 +79,7 @@ static NSUInteger kNumberOfFormElements = 2;
     UIImage *aLogo = [UIImage imageNamed:@"urbanpiper-logo"];
     CGFloat aViewWidth = CGRectGetWidth(self.view.bounds);
     CGFloat aViewHeight = CGRectGetHeight(self.view.bounds);
-    CGFloat aLogoX = floorf(aViewWidth / 2.0) - (aLogo.size.width / 2.0)    ;
+    CGFloat aLogoX = floorf(aViewWidth / 2.0) - (aLogo.size.width / 2.0);
     CGRect aLogoFrame = CGRectIntegral(CGRectMake(aLogoX , (4 * kPadding), aLogo.size.width, aLogo.size.height));
     // NSLog(@"aLogoFrame : %f : %f: %f: %f",aLogoFrame.origin.x, aLogoFrame.origin.y, aLogoFrame.size.width, aLogoFrame.size.height);
     CGRect aLogoAnimationFrame = CGRectIntegral(CGRectMake((aViewWidth / 2.0), (aViewHeight / 2.0), aLogo.size.width, aLogo.size.height));
@@ -92,16 +93,9 @@ static NSUInteger kNumberOfFormElements = 2;
     [self.viewContainer addSubview:self.upLogo];
 
     // Add the company name
-    _UIGraphicsLetterpressStyle *aTextLetterpressStyle = [[_UIGraphicsLetterpressStyle alloc] init];
-    aTextLetterpressStyle.innerOpacity = 1.0;
-    aTextLetterpressStyle.outerShadowColor = [UIColor whiteColor];
-    aTextLetterpressStyle.outerShadowBlur = 0.0;
-    aTextLetterpressStyle.outerShadowOffset = CGPointMake(0.0, -2.0);
-    aTextLetterpressStyle.embossSize = 0.0;
-    
     NSString *aParentCompany = @"UrbanPiper";
     CGSize aSize = [aParentCompany sizeWithFont:[UIFont fontWithName:@"TrebuchetMS-Bold" size:34.0]];
-    CGFloat aHeadingX = floorf(aViewWidth / 2.0) - (aSize.width / 2.0);
+    CGFloat aHeadingX = floorf(aViewWidth / 2.0) - (aSize.width / 2.0) + 10.0;
     CGRect aHeadingFrame = CGRectIntegral(CGRectMake(aHeadingX, aLogoFrame.origin.y + aLogoFrame.size.height, aSize.width, aSize.height));
     self.companyName = [[UILabel alloc] initWithFrame:aHeadingFrame];
     [self.companyName setBackgroundColor:[UIColor clearColor]];
@@ -154,7 +148,7 @@ static NSUInteger kNumberOfFormElements = 2;
     CGRect aRect = self.view.bounds;
     aRect.size.height -= aKeyboardSize.width;
     
-    CGPoint aScrollPoint = CGPointMake(0.0, self.activeTextField.frame.size.height + self.signUpButton.frame.size.height);
+    CGPoint aScrollPoint = CGPointMake(0.0, self.activeTextField.frame.size.height + self.signUpButton.frame.size.height - 20.0);
     [self.viewContainer setContentOffset:aScrollPoint animated:YES];
 }
 
@@ -203,7 +197,9 @@ static NSUInteger kNumberOfFormElements = 2;
     if (aCell == nil) {
         aCell = [[UPTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:aCellIdentifier];
         aCell.hasSeparator = YES;
+        aCell.cellStyle = UPTableViewCellStyleLogin;
         aCell.delegate = self;
+        aCell.isEntryCell = YES;
         aCell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
@@ -268,7 +264,7 @@ static NSUInteger kNumberOfFormElements = 2;
     
     NSString *aNewValue = [iTextField.text stringByReplacingCharactersInRange:iRange withString:iString];
     
-    [self.formValues setObject:aNewValue    forKey:self.activeTextField.elementKey];
+    [self.formValues setObject:aNewValue forKey:self.activeTextField.elementKey];
     
     if ([self isFormValid]) {
         [self.signUpButton isTappable:YES];
@@ -277,6 +273,13 @@ static NSUInteger kNumberOfFormElements = 2;
     }
     
     return YES;
+}
+
+
+- (void)selectTextInTextField:(UITextField *)iTextField range:(NSRange)range {
+    UITextPosition *from = [iTextField positionFromPosition:[iTextField beginningOfDocument] offset:range.location];
+    UITextPosition *to = [iTextField positionFromPosition:from offset:range.length];
+    [iTextField setSelectedTextRange:[iTextField textRangeFromPosition:from toPosition:to]];
 }
 
 
@@ -311,6 +314,7 @@ static NSUInteger kNumberOfFormElements = 2;
 
 
 - (IBAction)authenticate:(id)iSender {
+    [self.activeTextField resignFirstResponder];
     [self.signUpButton addSubview:self.spinner];
     [self.spinner startAnimating];
     
@@ -319,8 +323,6 @@ static NSUInteger kNumberOfFormElements = 2;
     [self.requestManager sendRequestForURL:[NSURL URLWithString:aURLString] authType:UPAuthenticationTypeBASIC requestType:@"GET" body:self.formValues completionBlock:^(NSDictionary *iResponse, NSError *iError) {
         NSLog(@"iResponse : %@",iResponse);
         NSLog(@"iError : %@",iError);
-        [self.spinner stopAnimating];
-        [self.spinner removeFromSuperview];
         
         if (iResponse && [iResponse count] > 0) {
             
@@ -331,13 +333,57 @@ static NSUInteger kNumberOfFormElements = 2;
             if ([iResponse valueForKey:@"username"]) {
                 [[UPSession sharedUPSession] setLoggedInUserName:[iResponse valueForKey:@"username"]];
             }
+            
+            [self fetchBusinessInformation];
+            
         } else {
             self.errorAlert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:[iError domain] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [self.errorAlert show];
         }
-        
     }];
-    
 }
+
+
+- (void)fetchBusinessInformation {
+    NSString *aFetchURL = @"https://api.urbanpiper.com/api/v1/biz/?format=json";
+    NSString *aParamString = [NSString stringWithFormat:@"&username=%@&api_key=%@",[[UPSession sharedUPSession] loggedInUserName],[[UPSession sharedUPSession]sharedAuthKey]];
+    NSString *aFetchURLString = [NSString stringWithFormat:@"%@%@",aFetchURL,aParamString];
+    
+    [self.requestManager sendRequestForURL:[NSURL URLWithString:aFetchURLString] authType:UPAuthenticationTypeGET requestType:@"GET" body:nil completionBlock:^(NSDictionary *iResponse, NSError *iError) {
+        
+        [self.spinner stopAnimating];
+        [self.spinner removeFromSuperview];
+
+        if (iResponse && [iResponse count] > 0) {
+            NSDictionary *aUserInfo = [[iResponse valueForKey:@"objects"] objectAtIndex:0];
+            UPCustomer *aCustomer = [[UPCustomer alloc] initWithDictionary:aUserInfo];
+            [[UPSession sharedUPSession] setCustomer:aCustomer];
+            
+            CATransition *aTransition = [CATransition animation];
+            aTransition.delegate = self;
+            aTransition.duration = 1.0;
+            aTransition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+            [aTransition setType:kCATransitionFade];
+            [[self.viewContainer layer] addAnimation:aTransition forKey:@"layerAnimation"];
+            self.viewContainer.alpha = 0.0;
+        }
+        
+        NSLog(@"iResponse : %@",iResponse);
+        NSLog(@"iError : %@",iError);
+    }];
+}
+
+
+- (void)animationDidStop:(CAAnimation *)iAnimation finished:(BOOL)iFlag {
+    [self.viewContainer removeFromSuperview];
+    UPMenuViewController *aMenuController = [[UPMenuViewController alloc] initWithNibName:nil bundle:nil];
+    CATransition *aTransition = [CATransition animation];
+    aTransition.duration = 1.0;
+    [aTransition setType:kCATransitionReveal];
+    [[aMenuController.view layer] addAnimation:aTransition forKey:@"layerAnimation"];
+    [self.view addSubview:[aMenuController view]];
+}
+
+
 
 @end

@@ -13,10 +13,10 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
 
 @implementation NSData (MBBase64)
 
-+ (id)dataWithBase64EncodedString:(NSString *)string {
-  if (string == nil)
++ (id)dataWithBase64EncodedString:(NSString *)iString {
+  if (iString == nil)
     [NSException raise:NSInvalidArgumentException format:nil];
-  if ([string length] == 0)
+  if ([iString length] == 0)
     return [NSData data];
   
   static char *decodingTable = NULL;
@@ -30,10 +30,10 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
       decodingTable[(short)encodingTable[i]] = i;
   }
   
-  const char *characters = [string cStringUsingEncoding:NSASCIIStringEncoding];
+  const char *characters = [iString cStringUsingEncoding:NSASCIIStringEncoding];
   if (characters == NULL)     //  Not an ASCII string!
     return nil;
-  char *bytes = malloc((([string length] + 3) / 4) * 3);
+  char *bytes = malloc((([iString length] + 3) / 4) * 3);
   if (bytes == NULL)
     return nil;
   NSUInteger length = 0;
@@ -77,6 +77,7 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
   return [NSData dataWithBytesNoCopy:bytes length:length];
 }
 
+
 - (NSString *)base64Encoding {
   if ([self length] == 0)
     return @"";
@@ -87,8 +88,7 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
   NSUInteger length = 0;
   
   NSUInteger i = 0;
-  while (i < [self length])
-  {
+  while (i < [self length]) {
     char buffer[3] = {0,0,0};
     short bufferLength = 0;
     while (bufferLength < 3 && i < [self length])
